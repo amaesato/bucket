@@ -1,0 +1,5 @@
+<h5> Edit Bucket: <%= @bucket.name %> <%= link_to 'Delete', bucket_path(@bucket), class: 'edits',
+                                      data: {confirm: 'Are you sure you want to delete your whole bucket?'}%></h5>
+
+<%= render(partial: 'form') %>
+<%= link_to '<< Back', bucket_path(@bucket) %>

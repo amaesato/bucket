@@ -1,0 +1,13 @@
+<div class="row container zero-margin">
+    <div class="no-padding col s12 m6 pull-left">
+      <h3><%= link_to "BUCKET", root_path %><strong><%= link_to "list", root_path %></strong></h3>
+    </div>
+      <ul id="topnav" class="col s12 m6 pull-left right-align">
+      <% if signed_in? %>
+        <li><%=link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+        <li><%=link_to 'Edit Account', edit_user_registration_path %></li>
+      <% else %>
+        <li><%=link_to 'Login', new_user_session_path %></li>
+      <% end %>
+      </ul>
+</div>

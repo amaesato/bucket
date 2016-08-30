@@ -1,0 +1,5 @@
+<h4>Bucket: <%= @bucket.name %><%= link_to 'edit', edit_bucket_path(@bucket), class: 'edits' %></h4>
+<p class="lead zero-margin">Theme: <%= @bucket.theme %></p>
+<p class="zero-margin">Completion goal: <%= @bucket.complete_by %></p>
+
+<p class="lead"><%= link_to 'Start adding to your list', new_bucket_list_path(@bucket) %></p>

@@ -1,0 +1,20 @@
+<%= form_for [@bucket, @list] , html: {class: 'col s12 m8 offset-m2'} do |f| %>
+<div class="row">
+  <div class="input-field col s12">
+    <%= f.label :name, class: 'active' %>
+    <%= f.text_field :name, required: true %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="input-field col s12 m6">
+    <%= f.label :notes, class: 'active' %>
+    <%= f.text_area :notes %>
+  </div>
+
+<div class="row">
+  <div class="input-field col s12 m8">
+    <%= f.submit %>
+  </div>
+</div>
+<%end%>

@@ -1,0 +1,41 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+a {
+  color: black;
+}
+
+#topnav a {
+  color: #000;
+  text-align: right;
+}
+#topnav li {
+  display: inline;
+  padding-left: 10px;
+}
+.zero-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.home-box {
+  height: 200px;
+}
+footer.page-footer {
+  background-color: #eee;
+}
+.top-margin {
+  margin-top: 25px;
+}
+.no-padding {
+  padding-left: 0;
+}

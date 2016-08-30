@@ -1,0 +1,36 @@
+
+    <%= form_for @bucket, html: {class: 'col s12 m8 offset-m2'} do |f| %>
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.label :name, class: 'active' %>
+        <%= f.text_field :name, required: true %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12 m6">
+        <%= f.label :complete_by, class: 'active' %>
+        <%= f.date_field :complete_by %>
+      </div>
+
+
+      <div class="input-field col s12 m6">
+        <%= f.label :theme, class: 'active' %>
+        <%= f.select :theme, Bucket.theme, {include_blank: 'Bucket List Theme'} %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12 m8">
+        <%= f.submit %>
+      </div>
+    </div>
+  <%end%>
+
+
+<script>
+$(document).ready(function() {
+    $('select').material_select();
+  });
+
+</script>

@@ -1,0 +1,8 @@
+<% if signed_in? %>
+  <div class="row">
+    <hr/>
+      <div class="col s12">
+        <%=link_to 'My Buckets', buckets_path %>  |  <%=link_to 'Add Buckets', new_bucket_path %>
+      </div>
+  </div>
+<% end %>

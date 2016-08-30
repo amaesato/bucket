@@ -1,0 +1,10 @@
+<h5> Welcome <%= current_user.first_name %></h5>
+
+<% if @buckets.any? %>
+  <h5>Your Buckets:</h5>
+  <% @buckets.each do |bucket| %>
+    <p class="lead"><%= link_to bucket.name, bucket_path(bucket) %></p>
+  <% end %>
+<% else %>
+  <p class="lead"><%= link_to 'Start Adding Buckets', new_bucket_path %>
+<% end %>
